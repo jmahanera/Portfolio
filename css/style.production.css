@@ -170,11 +170,17 @@ span {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  margin: 0;
 }
 
 .grid__item {
   background-color: #71c473;
   padding: 20px;
+  width: 100%; /* Set each grid item to take full width of the container */
+  box-sizing: border-box; /* Include padding and border in the width */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Stack content vertically within each item */
+  align-items: stretch; /* Align items to stretch to full width */
 }
 
 @media all and (max-width: 750px) {
@@ -188,7 +194,10 @@ span {
   }
 }
 
-/* Additional styling for contact info, skills list, and page footer */
+.grid__item {
+  align-self: center;
+} /* Additional styling for contact info, skills list, and page footer */
+
 .contact-info {
   text-align: center;
   max-width: 700px;
@@ -261,9 +270,6 @@ button:focus,
     grid-row: auto / auto;
   }
 
-  .grid__item {
-    align-self: center;
-  }
   .sun {
     animation-duration: 4s;
     animation-name: color-change;
