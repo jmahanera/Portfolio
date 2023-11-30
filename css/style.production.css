@@ -186,7 +186,7 @@ span {
 }
 .grid__item {
   display: inline-block;
-  width: 50%;
+  width: 33%;
 }
 @supports (display: grid) {
   .grid {
