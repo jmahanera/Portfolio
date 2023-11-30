@@ -1,0 +1,277 @@
+body {
+  --font-family: "Lato", sans-serif;
+  --font-weight: 400;
+  --font-size: 16px;
+  --line-height: 1.6;
+}
+* {
+  box-sizing: border-box;
+}
+h1 {
+  --font-size: 30px;
+  --font-weight: 700;
+  --text-decoration: none;
+}
+span h1 {
+  --color: darkblue;
+}
+h2 {
+  --font-size: 24px;
+  --font-weight: 700;
+}
+h3 {
+  --font-size: 18px;
+  --font-weight: 700;
+}
+a {
+  ---color: #357b70;
+}
+a:visited {
+  --color: #05676e;
+}
+a:hover a:focus {
+  --text-decoration: none;
+}
+a:active {
+  --color: #489c79;
+}
+button {
+  --border: none;
+  --font-family: inherit;
+  --background-color: #357b70;
+  --color: white;
+  --text-decoration: none;
+  --padding: 10px;
+  --border-radius: 3px;
+}
+button:hover,
+button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.button__secondary {
+  --background-color: #f8f7f5;
+  --color: #2b2b2b;
+}
+
+:root {
+  --primary-color: #357b70;
+  --secondary-color: #e0b354;
+  --dark-grey: #2b2b2b;
+}
+#my-link {
+  --color: green;
+}
+.my-link {
+  --color: blue;
+}
+.profile_portrait {
+  float: left;
+}
+.profile_portrait {
+  float: left;
+  --max-width: 250px;
+  --margin-right: 40px;
+}
+.profile {
+  --max-width: 700px;
+  --margin: 0 auto;
+}
+.profile_portrait {
+  float: left;
+  --max-width: 250px;
+  --margin-right: 40px;
+  --border-radius: 50%;
+}
+span {
+  --background-color: lightblue;
+  --font-weight: bold;
+}
+.page-header {
+  display: flex;
+  --width: 100%;
+  --padding: 20px;
+}
+.page-header_item {
+  flex: 0 1 200px;
+}
+.page-header_item:last-child {
+  flex-grow: 1;
+  text-align: right;
+}
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+.navigation-list_item--active {
+  text-decoration: none;
+}
+.navigation-list {
+  list-style-type: none;
+}
+ul {
+  list-style-type: none;
+}
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.page-footer {
+  clear: both;
+}
+.grid {
+  display: grid;
+}
+.grid__item {
+  --background-color: #d3d3d3;
+  --width: auto;
+  --min-height: auto;
+  --margin: 0;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20px;
+  margin: 0;
+}
+.grid__item:last-child {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.grid__item:last-child {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+}
+.contact-info {
+  --max-width: 700px;
+  --margin: 0 auto;
+}
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (--min-width: 500px) and (--max-width: 750px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (--max-width: 750px) {
+  .grid {
+    --gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    --font-size: 22px;
+  }
+}
+button,
+.button {
+  border: none;
+  display: inline-block;
+  --font-family: inherit;
+  --background-color: #357b70;
+  --color: rgb(255, 255, 255);
+  text-decoration: none;
+  --padding: 10px;
+  --border-radius: 3px;
+  --border-bottom: 2px solid var(rgb(0, 0, 0, 0.3));
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+
+body {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+/*What would you do if you wanted to animate the color of the sun? For instance, 
+what if you wanted to have the sun change from yellow to red, then back to yellow? 
+First, you’d need to define the @keyframe rule. Note that color-change is simply a 
+name that's been given to the animation.*/
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes color-change {
+  from {
+    --fill: #edc655;
+  }
+  to {
+    --fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+/*To move an element around in a 2D or even 3D space, you can use the CSS property 
+transform. This property enables you to rotate, scale, skew, or even move elements. 
+For every different “type” of movement, you’ll need a different value.*/
+/*he most common ones are:
+
+1. rotate(radius) rotates an element by a given radius (in degrees)
+1. scale(factor) shrinks or enlarges an element by a given factor (e.g., 0.5 would make it half as big)
+3. translate(x,y) repositions an element in the horizontal and/or vertical 
+direction by given values (e.g., 50px right and 50px top)*/
+
+/*All the values above would create 2D movements. If you wanted to create movement in 
+a 3D space, you’d need to add three dimensions to the definition by way of a Z-axis 
+value, like this: scale3d(x,y,z). For your clouds, though, you simply want to move them
+ along a horizontal path across the screen, so you’ll use the value translate(x,y).*/
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+/*As you want your cloud to move very slowly, the animation time has been set to 30s.
+Now, let’s do the same for the cloud in the back. 
+First, create a keyframe animation, this time called cloud-move-reverse*/
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+/*Then, apply the animation (via the short way) to your cloud in the back (cloud-back)*/
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
