@@ -171,7 +171,7 @@ span {
 }
 
 .grid {
-  display: grid;
+  display: flex;
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 300px 300px;
 }
