@@ -165,11 +165,12 @@ span {
   align-content: center;
 }
 
+/* Integrated Grid Styling */
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  margin: 0; /* Remove margin to ensure full width */
+  margin: 0;
 }
 
 .grid__item {
@@ -191,11 +192,11 @@ span {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
-
-  .grid__item {
-    align-self: center;
-  }
 }
+
+.grid__item {
+  align-self: center;
+} /* Additional styling for contact info, skills list, and page footer */
 .contact-info {
   text-align: center;
   max-width: 700px;
