@@ -175,6 +175,8 @@ span {
 .grid__item {
   background-color: #71c473;
   padding: 20px;
+  grid-column: auto / auto;
+  grid-row: auto / auto;
 }
 
 @media all and (max-width: 750px) {
