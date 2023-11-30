@@ -126,7 +126,7 @@ body {
   font-size: 2em;
   font-style: normal;
   font-weight: 700;
-  color: #0d0676;
+  color: #1708eb;
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
     1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
     1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
@@ -171,7 +171,7 @@ span {
 }
 
 .grid {
-  display: flex;
+  display: grid;
   grid-template-columns: 300px 300px 300px;
   grid-template-rows: 300px 300px;
 }
@@ -180,13 +180,13 @@ span {
   padding: 20px;
 }
 .grid {
-  display: flex;
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
 }
 .grid__item {
   display: inline-block;
-  width: 33%;
+  width: 50%;
 }
 @supports (display: grid) {
   .grid {
