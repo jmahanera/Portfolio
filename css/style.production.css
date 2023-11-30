@@ -121,7 +121,7 @@ body {
   font-size: 2em;
   font-style: normal;
   font-weight: 700;
-  color: brown;
+  color: Brown;
   text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
     1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
     1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
@@ -175,8 +175,6 @@ span {
 .grid__item {
   background-color: #71c473;
   padding: 20px;
-  grid-column: auto / auto;
-  grid-row: auto / auto;
 }
 
 @media all and (max-width: 750px) {
