@@ -63,7 +63,7 @@ button:focus {
   --color: green;
 }
 .my-link {
-  --color: blue;
+  --color: rgb(5, 5, 59);
 }
 .profile_portrait {
   float: left;
