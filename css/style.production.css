@@ -173,18 +173,20 @@ span {
 }
 
 .grid__item {
+  display: flex;
+  flex-direction: column;
   background-color: #71c473;
   padding: 20px;
-  width: 100%; /* Set each grid item to take full width of the container */
-  box-sizing: border-box; /* Include padding and border in the width */
-  display: flex; /* Use flexbox for alignment */
-  flex-direction: column; /* Stack content vertically within each item */
-  align-items: stretch; /* Align items to stretch to full width */
+  box-sizing: border-box;
+}
+
+.grid__content {
+  flex: 1;
 }
 
 @media all and (max-width: 750px) {
-  .grid {
-    gap: 10px;
+  .grid__item {
+    width: 100%;
   }
 
   .grid__item:last-child {
