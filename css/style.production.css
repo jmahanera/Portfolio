@@ -175,8 +175,9 @@ span {
 .grid__item {
   background-color: #71c473;
   padding: 20px;
-  grid-column: auto / auto;
-  grid-row: auto / auto;
+  width: 100%; /* Set a fixed width, adjust as needed */
+  height: 100%; /* Set a fixed height, adjust as needed */
+  box-sizing: border-box; /* Include padding and border in the width */
 }
 
 @media all and (max-width: 750px) {
