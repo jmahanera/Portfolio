@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <!---BELOW IS THE VIEWPORT DECLARATION
+    While this media query trick works great when it comes to scaling up and down
+     on a laptop or desktop, it won’t always work when viewing the site on a mobile
+      device. For this reason, HTML5 introduced a way for web developers to take 
+      control of the viewport—the areas of the web page that are visible to the 
+      user—through a meta tag. (Though keep in mind that these areas might not all 
+      be seen by the user at the same time, as some may be below the fold on the web
+       page.) This tag gives the browser instructions on how to control the page's 
+       dimensions and scaling.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Work-Page</title>
+    <!--Meta.This specifies the Character encodine for the HTML 
+    document. The HTML% specification encourages web developers to use the
+     UTF-8 Character-->
+
+    <link
+      rel="shortcut icon"
+      href="img/favicon-32x32.png"
+      type="image/x-icon"
+    >
+    <!--favicon done using https://favicon.io/favicon-converter/-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+
+    <link rel="stylesheet" type="text/css" href="./css/style.production.css" >
+    <!--This links the html page to the css sheet-->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lato&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+
+  <body>
+    <header class="page-header">
+    
+             <nav>
+           <a href="index.html"><img src="img/logo.png" height="30" width="60" alt="logo">
+           </a>
+           </nav>
+          
+      
+
+      <!--This is the Menu-Bar. The Logo and the Menu
+      have to be in the same container-->
+      <nav class="main-navigation page-header_item">
+        <ul role="menubar" class="navigation-list">
+          <li role="presentation">
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Home</a
+            >
+          </li>
+
+          <li role="presentation">
+            <a
+              href="about.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item"
+              >about</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >contact</a
+            >
+          </li>
+
+          <li role="presentation">
+            <a
+              href="work.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >work</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main content -->
+    <section>
+      <h1>Work</h1>
+      <div class="grid__item">
+        <h2>moblie web app</h2>
+        <p>
+          Within this project, I was responsible for the frontend. It is written
+          in React.js. Additionally, I've created the HTML and CSS templates.
+          <a href="#">See project on GitHub</a>
+        </p>
+      </div>
+
+      <div class="grid__item">
+        <h2>Web coding</h2>
+        <p>
+          Within this project, I was responsible for the coding. It is written
+          in html and css.
+        </p>
+        <a href="#">See project on linkedin</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>Online store</h2>
+        <p>
+          During this project cycle, I was responsible for the backend. I worked
+          with a small team of 3.
+              
+        </p>
+        <a href="#">See project on linkedin</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>Anti malware</h2>
+        <p>
+          Within this project, I was assisting with the optimization. It is
+          written in C++.
+        </p>
+        <a href="#">See sample on twitter</a>
+      </div>
+
+      <div class="grid__item">
+        <h2>Anonymous Web browser</h2>
+        <p>
+          Within this project, I was responsible for most of the coding. It is
+          written in C#. Aditionally i designed the user interface.
+        </p>
+        <a href="#">See project on linkedin</a>
+      </div>
+      <div class="grid__item">
+        <h2>Surveilance Software</h2>
+        <p>
+          Within this project, I was part of the coding team. The code was
+          written in C++. I came up with the whole Intermediate
+        </p>
+        <a href="#">See project on linkedin</a>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <h3>Find me on</h3>
+      <!--BELOW IS A TWITTER LINK WITH CLICKABLE ICON LEADING STRAIGHT TO MY TWITTER PROFILE -->
+      <div class="social-media">
+        <a href="https://www.twitter.com/@jula_mahanera" target="_blank"
+          ><img src="img/twitter.svg" height="30" width="30" alt="twitter"
+        ></a>
+
+        <!--BELOW IS A TWITTER LINK WITH CLICKABLE ICON LEADING STRAIGHT TO MY linkedin PROFILE -->
+        <a
+          href="https://www.linkedin.com/in/jula-mahanera-94b549175/"
+          target="_blank"
+          ><img src="img/linkedin.svg" height="30" width="30" alt="linkedin">
+        </a>
+
+        <a
+          href="https://github.com/julamahanera/Portfolio1/"
+          target="_blank"
+          ><img src="img/github.svg" height="30" width="30" alt="github">
+        </a>
+        <br>
+
+        <!--logos extracted from https://www.iconfinder.com/-->
+
+        <script src="js/tota11y.min.js"></script>
+        <!--DOWNLOADED AND LINKED TOTA11Y FROM https://github.com/Khan/tota11y/releases/tag/0.1.6 
+      USING THE ABOVE CODE TO LINK IT TO THE HTML PAGE.-->
+
+        <!--<button type="button">Default Button</button>
+        <button class="button__secondary">Secondary Button</button>-->
+      </div>
+    </footer>
+  </body>
+</html>
