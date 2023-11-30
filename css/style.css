@@ -124,12 +124,12 @@ ul {
 .grid {
   display: grid;
 }
-.grid__item {
+/*.grid__item {
   --background-color: #d3d3d3;
   --width: auto;
   --min-height: auto;
   --margin: 0;
-}
+}*/
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -139,12 +139,12 @@ ul {
 .grid__item:last-child {
   grid-column-start: 3;
   grid-column-end: 3;
-  grid-row-start: 1;
+  grid-row-start: 3;
   grid-row-end: 3;
 }
 .grid__item:last-child {
   grid-column: 3 / 3;
-  grid-row: 1 / 3;
+  grid-row: 3 / 3;
 }
 .contact-info {
   --max-width: 700px;
