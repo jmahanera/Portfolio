@@ -1,4 +1,4 @@
-body {
+/*body {
   --font-family: "Lato", sans-serif;
   --font-weight: 400;
   --font-size: 16px;
@@ -124,12 +124,12 @@ ul {
 .grid {
   display: grid;
 }
-/*.grid__item {
+.grid__item {
   --background-color: #d3d3d3;
   --width: auto;
   --min-height: auto;
   --margin: 0;
-}*/
+}
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
