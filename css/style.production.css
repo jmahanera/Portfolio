@@ -66,8 +66,8 @@ ul {
 }
 body {
   font-family: "Lato", sans-serif;
-  font-weight: 401;
-  font-size: 16px;
+  font-weight: bolder;
+  font-size: 20px;
   line-height: 1.6;
   min-height: 100%;
   display: flex;
@@ -110,7 +110,9 @@ h3 {
 
 /*below is the css code for the Index.html head name "Jula Mahanera"*/
 body {
-  background-color: #f5f5f5;
+  background-color: #afed4c; /* Light violet color */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 .text {
@@ -174,7 +176,7 @@ body {background-color: #357b70}*/
     --primary-color: #357b70;
     --secondary-color: #e0b354;
     --dark-grey: #2b2b2b;
-    --white: white;
+    --white: rgb(171, 113, 171);
     --black: black;
   }
 
@@ -237,6 +239,7 @@ body {background-color: #357b70}*/
     text-align: left;
     text-overflow: inherit;
   }
+
   * {
     box-sizing: border-box;
   }
@@ -267,7 +270,7 @@ body {background-color: #357b70}*/
 
   /*below is the css code for the Index.html head name "Jula Mahanera"*/
   body {
-    background-color: #f5f5f5;
+    background-color: rgb(239, 77, 239);
   }
 
   .text {
@@ -317,7 +320,7 @@ body {background-color: #357b70}*/
     border-radius: 50%;
   }
   span {
-    font-weight: bold;
+    font-weight: bolder;
     color: rgb(70, 6, 6);
   }
   .button {
@@ -471,10 +474,7 @@ body {background-color: #357b70}*/
   margin-right: 40px;
   border-radius: 50%;
 }
-span {
-  font-weight: bold;
-  color: rgb(70, 6, 6);
-}
+
 .button {
   align-content: center;
 }
