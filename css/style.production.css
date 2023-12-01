@@ -310,3 +310,39 @@ button:focus,
   margin-left: auto;
   margin-right: auto;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px; /* Adjust font size for better readability on smaller screens */
+  }
+
+  .page-header {
+    padding: 10px; /* Add padding to the header for better spacing on mobile */
+  }
+
+  .navigation-list {
+    flex-direction: column; /* Stack navigation items vertically */
+  }
+
+  .navigation-list__item {
+    margin-bottom: 10px; /* Add margin between navigation items */
+  }
+
+  .grid__item {
+    margin-bottom: 20px; /* Add margin between grid items */
+  }
+
+  .profile_portrait {
+    width: 100%; /* Ensure the portrait image takes up the full width of the container */
+  }
+
+  .page-footer {
+    padding: 10px; /* Add padding to the footer for better spacing on mobile */
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: space-around; /* Center social media icons on mobile */
+  }
+
+  /* Add more styles as needed for specific elements */
+}
