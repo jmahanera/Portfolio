@@ -15,6 +15,7 @@ h1 {
 span h1 {
   --color: darkblue;
 }
+
 h2 {
   --font-size: 24px;
   --font-weight: 700;
@@ -26,6 +27,7 @@ h3 {
 a {
   ---color: #fafafa;
 }
+
 a:visited {
   --color: #05676e;
 }
