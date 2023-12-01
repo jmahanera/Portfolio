@@ -17,3 +17,5 @@ bin-release/
 # should NOT be excluded as they contain compiler settings and other important
 # information for Eclipse / Flash Builder.
 img/4.10.zip
+img/meet.png
+img/pokedex.png
