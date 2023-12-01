@@ -21,8 +21,12 @@ h1 {
 
 span h1 {
   color: darkblue;
+  font-weight: bolder;
 }
-
+span {
+  color: darkblue;
+  font-weight: 40px;
+}
 h2 {
   font-size: 24px;
   font-weight: 700;
