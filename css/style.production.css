@@ -110,7 +110,11 @@ h3 {
 
 /*below is the css code for the Index.html head name "Jula Mahanera"*/
 body {
-  background-color: #afed4c; /* Light violet color */
+  background: linear-gradient(
+    45deg,
+    blueviolet,
+    lightgreen
+  ); /* Gradient background */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
 }
