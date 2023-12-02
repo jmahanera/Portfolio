@@ -110,11 +110,7 @@ h3 {
 
 /*below is the css code for the Index.html head name "Jula Mahanera"*/
 body {
-  background: linear-gradient(
-    45deg,
-    blueviolet,
-    lightgreen
-  ); /* Gradient background */
+  background: linear-gradient(#d1fdff, #fddb92); /* Gradient background */
   margin: 0; /* Remove default margin */
   padding: 0; /* Remove default padding */
 }
@@ -432,7 +428,7 @@ body {background-color: #357b70}*/
     margin: 0;
   }
   .grid__item {
-    background-color: #71c473;
+    background-color: #96deda;
     width: auto;
     min-height: auto;
     margin: 0;
