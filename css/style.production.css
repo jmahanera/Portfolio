@@ -93,7 +93,7 @@ h1 {
 }
 h2 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 900;
   text-align: center;
 }
 h3 {
@@ -132,9 +132,83 @@ body {
     1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
     1px 30px 60px rgba(16, 16, 16, 0.4);
 }
+/* Common styles for grid items */
+.grid__item {
+  background-color: transparent;
+  padding: 20px;
+}
+
+/* Grid layout for larger screens */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+/* Styles for grid items within the grid */
+.grid__item {
+  width: 100%;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 750px) {
+  /* Adjust grid layout for smaller screens */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Center grid items on smaller screens */
+  .grid__item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Additional styles for images within grid items on smaller screens */
+  .grid__item img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Ensure images don't exceed their original size */
+  }
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
 
 /*End of head name code*/
 
+.profile-text {
+  margin-top: 50px; /* Add margin as needed */
+}
+.profile {
+  text-align: center;
+}
 a:hover a:focus {
   text-decoration: none;
 }
@@ -172,153 +246,7 @@ body {background-color: #357b70}*/
   * {
     box-sizing: border-box;
   }
-  :root {
-    --primary-color: #357b70;
-    --secondary-color: #e0b354;
-    --dark-grey: #2b2b2b;
-    --white: rgb(171, 113, 171);
-    --black: black;
-  }
 
-  .Name {
-    text-transform: uppercase;
-    color: #44107a;
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    background-clip: text;
-    animation: textclip 3s linear infinite;
-    display: inline-block;
-    font-size: 30px;
-  }
-  .page-header {
-    display: flex;
-    width: 100%;
-    padding: 20px;
-    border-bottom-style: dotted;
-    border-color: #2b2b2b;
-  }
-  .page-header_item {
-    flex: 0 1 200px;
-  }
-  .page-header_item:last-child {
-    flex-grow: 1;
-    text-align: left;
-  }
-  .navigation-list {
-    list-style-type: none;
-  }
-  .navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
-    transition: 0.3s;
-  }
-  .navigation-list_item--active {
-    text-decoration: none;
-  }
-  .navigation-list {
-    list-style-type: none;
-  }
-  ul {
-    list-style-type: none;
-    text-align: right;
-  }
-  body {
-    font-family: "Lato", sans-serif;
-    font-weight: 401;
-    font-size: 16px;
-    line-height: 1.6;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  body {
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    text-overflow: inherit;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-  h1 {
-    font-size: 30px;
-    font-weight: 700;
-    text-decoration: none;
-    text-align: left;
-    color: blue;
-    text-align: center;
-  }
-  h2 {
-    font-size: 24px;
-    font-weight: 700;
-    text-align: center;
-  }
-  h3 {
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-  }
-  .self {
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    font-style: italic;
-  }
-
-  /*below is the css code for the Index.html head name "Jula Mahanera"*/
-  body {
-    background-color: rgb(239, 77, 239);
-  }
-
-  .text {
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    text-transform: uppercase;
-    font-family: verdana;
-    font-size: 2em;
-    font-style: normal;
-    font-weight: 700;
-    color: #1708eb;
-    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
-      1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
-      1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
-      1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
-      1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
-      1px 30px 60px rgba(16, 16, 16, 0.4);
-  }
-
-  /*End of head name code*/
-
-  a:hover a:focus {
-    text-decoration: none;
-  }
-  button {
-    border: none;
-    font-family: inherit;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-  }
-  button:hover,
-  button:focus {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-  .profile {
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  .profile_portrait {
-    float: left;
-    max-width: 250px;
-    height: auto;
-    margin-right: 40px;
-    border-radius: 50%;
-  }
   span {
     font-weight: bolder;
     color: rgb(70, 6, 6);
@@ -329,21 +257,16 @@ body {background-color: #357b70}*/
 
   .grid {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
   .grid__item {
     background-color: transparent;
     padding: 20px;
   }
-  .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-  }
+
   .grid__item {
     display: inline-block;
-    width: 33%;
   }
   @supports (display: grid) {
     .grid {
