@@ -203,7 +203,7 @@ input[type="submit"]:hover {
 
 .profile_portrait {
   border-radius: 50%; /* Use 50% to create a circular shape */
-  border: 2px solid #fff; /* Optional: Add a white border */
+  border: 4px solid #fff; /* Optional: Add a white border */
 }
 
 /*End of head name code*/
