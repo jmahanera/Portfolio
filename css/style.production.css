@@ -199,6 +199,12 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: #45a049;
 }
+/* style.production.css */
+
+.profile_portrait {
+  border-radius: 50%; /* Use 50% to create a circular shape */
+  border: 2px solid #fff; /* Optional: Add a white border */
+}
 
 /*End of head name code*/
 
