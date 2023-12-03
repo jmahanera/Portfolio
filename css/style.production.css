@@ -140,9 +140,8 @@ body {
 
 /* Grid layout for larger screens */
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /* Styles for grid items within the grid */
@@ -298,104 +297,100 @@ body {background-color: #357b70}*/
       text-align: center;
     }
   }
-  @media all and (max-width: 500px) {
+  @media all and (max-width: 600px) {
   }
-  button,
-  .button {
-    border: none;
-    display: inline-block;
-    font-family: inherit;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    transition-duration: 0.2s;
-    transition-property: opacity;
-    background-color: rgb(191, 217, 229);
-  }
-  button:hover,
-  button:focus,
-  .button:hover,
-  .button:focus {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-  .grid__item {
+}
+@media all and (min-width: 601px) {
+}
+button,
+.button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  background-color: rgb(191, 217, 229);
+}
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+/*.grid__item {
     display: inline-block;
     width: 33%;
-  }
-  @supports (display: grid) {
+  }*/
+/*@supports (display: grid) {
     .grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       gap: 20px;
       margin: 0;
-    }
-    .grid {
-      grid-template-columns: 1fr;
-    }
+    }*/
+.grid {
+  grid-template-columns: 1fr;
+}
+
+/*@media all and (max-width: 600px) {
   }
-  @media all and (min-width: 500px) and (max-width: 750px) {
-    .grid {
-      grid-template-columns: 1fr 1fr;
-    }
-  }
-  @media all and (max-width: 750px) {
+  @media all and (max-width: 6000px) {
     .grid {
       gap: 10px;
-    }
-    .grid__item:last-child {
+    }*/
+/*.grid__item:last-child {
       grid-column: auto / auto;
       grid-row: auto / auto;
-    }
+    }*/
 
-    .grid__item {
+/*.grid__item {
       align-self: center;
-    }
-    .sun {
-      animation-duration: 4s;
-      animation-name: color-change;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      animation-timing-function: linear;
-    }
-    .sun {
-      animation: color-change 4s linear infinite alternate;
-    }
-  }
-  @keyframes cloud-move {
-    from {
-      transform: translate(0, 50px);
-    }
-    to {
-      transform: translate(200px, 50px);
-    }
-  }
-  .cloud-front {
-    animation: cloud-move 30s linear infinite alternate;
-  }
-  @keyframes cloud-move-reverse {
-    from {
-      transform: translate(446px, 48px);
-    }
-    to {
-      transform: translate(100px, 48px);
-    }
-  }
-  .cloud-back {
-    animation: cloud-move-reverse 34s linear infinite alternate;
-  }
-  .berlin-illustration {
-    position: relative;
-    right: 0;
-  }
+    }*/
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+.sun {
+  animation: color-change 4s linear infinite alternate;
+}
 
-  .center {
-    margin-left: auto;
-    margin-right: auto;
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
   }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+.cloud-front {
+  animation: cloud-move 30s linear infinite alternate;
+}
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+.cloud-back {
+  animation: cloud-move-reverse 34s linear infinite alternate;
+}
+.berlin-illustration {
+  position: relative;
+  right: 0;
+}
 
-  margin-right: 40px;
-  border-radius: 50%;
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .button {
