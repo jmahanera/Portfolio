@@ -141,7 +141,7 @@ body {
 /* Grid layout for larger screens */
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
 }
 
@@ -152,11 +152,6 @@ body {
 
 /* Media query for smaller screens */
 @media screen and (max-width: 750px) {
-  /* Adjust grid layout for smaller screens */
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
   /* Center grid items on smaller screens */
   .grid__item {
     margin-left: auto;
@@ -169,6 +164,11 @@ body {
     height: auto;
     max-width: 100%; /* Ensure images don't exceed their original size */
   }
+}
+
+/* Adjust grid layout for smaller screens */
+.grid {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
 form {
